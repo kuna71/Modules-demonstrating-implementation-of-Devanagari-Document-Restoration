@@ -10,6 +10,8 @@ Character Segmentation - Set variables in character-segmentation.py (OUTPUT_PATH
 
 MLM and RegEx restoration-In file fill-mask-code.py, set variable files to list of strings containing files of damaged document text ("<blank>" denoting damaged characters). 
 
+OCR - In file OCR1.py, set the test_image in the last cell with the image path of your input image and run the script 
+
 ## Methodology Overview:
   
 The document image is first preprocessed to prepare for word and subsequent character segmentation. This consists of gray scaling, thresholding and image dilation. The preprocessed document is segmented into words using contouring. Each word is then further segmented into characters after Shirorekha erasure and contouring. 
