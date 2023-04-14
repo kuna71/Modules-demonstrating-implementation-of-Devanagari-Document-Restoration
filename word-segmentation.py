@@ -4,7 +4,8 @@ import pandas as pd
 import os
 from time import time
 OUTPUT_PATH = "SET OUTPUT PATH"
-img= cv2.imread("SET PATH TO INPUT DOCUMENT IMAGE")
+INPUT_IMAGE_PATH = "SET PATH TO INPUT DOCUMENT IMAGE"
+img= cv2.imread(INPUT_IMAGE_PATH)
 preprocess_start=time()
 img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
